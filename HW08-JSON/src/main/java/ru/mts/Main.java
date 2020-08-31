@@ -7,6 +7,8 @@ public class Main {
         System.out.println("Start");
         Gson gson = new Gson();
         AnyObject obj = new AnyObject(22, "test", 10);
+        long[] longs = {123456789,987654321,1029384756};
+        obj.setLongs(longs);
         String json = gson.toJson(obj);
         System.out.println(json);
 
